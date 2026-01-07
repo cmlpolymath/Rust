@@ -1,0 +1,41 @@
+# Ignore everything by default
+*
+
+# But don't ignore .gitignore itself
+!.gitignore
+
+# Don't ignore any Cargo.toml files (at any level)
+!**/Cargo.toml
+
+# Don't ignore any src directories and their contents
+!**/src/
+!**/src/**/*
+
+# Explicitly ignore common build artifacts and other files we don't want
+target/
+**/*.rs.bk
+**/*.exe
+**/*.dll
+**/*.so
+**/*.dylib
+**/*.a
+**/*.lib
+Cargo.lock
+debug/
+release/
+*.pdb
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
