@@ -1,17 +1,4 @@
-# Ignore everything by default
-*
-
-# But don't ignore .gitignore itself
-!.gitignore
-
-# Don't ignore any Cargo.toml files (at any level)
-!**/Cargo.toml
-
-# Don't ignore any src directories and their contents
-!**/src/
-!**/src/**/*
-
-# Explicitly ignore common build artifacts and other files we don't want
+# Default ignore patterns for Rust projects
 target/
 **/*.rs.bk
 **/*.exe
@@ -25,6 +12,7 @@ debug/
 release/
 *.pdb
 
+audio_profiles/assets
 # IDE/Editor files
 .vscode/
 .idea/
